@@ -126,15 +126,16 @@ app.use(express.static(PUBLIC, {
 }));
 
 // ── Clean URLs ────────────────────────────────────────────────────────────────
+// Redirect to real /pages/ paths so relative asset refs (../css/ etc) work correctly
 app.get('/services',                (_req, res) => res.redirect(301, '/'));
-app.get('/work',                    (_req, res) => res.sendFile(path.join(PUBLIC, 'pages', 'work.html')));
-app.get('/about',                   (_req, res) => res.sendFile(path.join(PUBLIC, 'pages', 'about.html')));
-app.get('/contact',                 (_req, res) => res.sendFile(path.join(PUBLIC, 'pages', 'contact.html')));
-app.get('/privacy',                 (_req, res) => res.sendFile(path.join(PUBLIC, 'pages', 'privacy.html')));
-app.get('/cookie-policy',           (_req, res) => res.sendFile(path.join(PUBLIC, 'pages', 'cookie-policy.html')));
-app.get('/work/iron-forge-gym',     (_req, res) => res.sendFile(path.join(PUBLIC, 'pages', 'iron-forge-gym',    'index.html')));
-app.get('/work/trustflow-plumbing', (_req, res) => res.sendFile(path.join(PUBLIC, 'pages', 'trustflow-plumbing','index.html')));
-app.get('/work/velvet-room-salon',  (_req, res) => res.sendFile(path.join(PUBLIC, 'pages', 'velvet-room-salon', 'index.html')));
+app.get('/work',                    (_req, res) => res.redirect(301, '/pages/work.html'));
+app.get('/about',                   (_req, res) => res.redirect(301, '/pages/about.html'));
+app.get('/contact',                 (_req, res) => res.redirect(301, '/pages/contact.html'));
+app.get('/privacy',                 (_req, res) => res.redirect(301, '/pages/privacy.html'));
+app.get('/cookie-policy',           (_req, res) => res.redirect(301, '/pages/cookie-policy.html'));
+app.get('/work/iron-forge-gym',     (_req, res) => res.redirect(301, '/pages/iron-forge-gym/index.html'));
+app.get('/work/trustflow-plumbing', (_req, res) => res.redirect(301, '/pages/trustflow-plumbing/index.html'));
+app.get('/work/velvet-room-salon',  (_req, res) => res.redirect(301, '/pages/velvet-room-salon/index.html'));
 
 // ── Sanitisation ──────────────────────────────────────────────────────────────
 function sanitise(str) {
@@ -165,7 +166,6 @@ function budgetLabel(v) {
 
 // ── POST /api/contact ─────────────────────────────────────────────────────────
 app.post('/api/contact', rateLimit, async (req, res) => {
-  // Honeypot — bots fill hidden fields, humans don't
   if (req.body._hp && req.body._hp.length > 0) return res.status(200).json({ success: true });
 
   const firstName = sanitiseShort(req.body.firstName, 100);
