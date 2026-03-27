@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- SECURITY HEADERS (set via server too; metas as fallback) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velvet Room Studio — Premium hair salon in Sherborne, Dorset. Expert colour, cuts, balayage and bridal styling. Book your appointment today." />
+  <title>Velvet Room Studio | Premium Hair Salon, Sherborne</title>
+  <meta property="og:title" content="Velvet Room Studio | Premium Hair Salon, Sherborne" />
+  <meta property="og:description" content="Expert colourists and stylists dedicated to making you feel extraordinary. Every visit tailored entirely to you." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="css/salon-demo.min.css" />
+</head>
+<body>
+
+  <!-- DEMO BANNER -->
+  <div class="demo-banner">This is a demo website built by Harbour Studios. <a href="../contact.html">Want one like this? Get a free quote →</a></div>
+
+  <!-- NAV -->
+  <nav id="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">Velvet <em>Room</em></a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#booking">Contact</a></li>
+        <li><a href="#booking" class="nav-book">Book Now</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- ══════════════════════
+       HERO
+  ══════════════════════ -->
+  <section id="hero" aria-labelledby="heroTitle">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Premium Hair Studio · Sherborne, Dorset</div>
+      <h1 class="hero-title" id="heroTitle">
+        Where style<br />meets
+        <em>craft.</em>
+      </h1>
+      <p class="hero-subtitle">Expert colourists and stylists dedicated to making you feel extraordinary. Every visit is tailored entirely to you.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-rose">Book an Appointment</a>
+        <a href="#services" class="btn btn-outline" style="color:rgba(255,255,255,0.6);border-color:rgba(255,255,255,0.2);">Our Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>8+</strong>
+          <span>Years established</span>
+        </div>
+        <div class="hero-stat">
+          <strong>4.9</strong>
+          <span>Google rating</span>
+        </div>
+        <div class="hero-stat">
+          <strong>3,200+</strong>
+          <span>Happy clients</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-photo" style="grid-column:1; grid-row:1/3;">
+        <picture>
+          <source srcset="assets/webp/studio-interior.webp" type="image/webp" />
+          <img src="assets/webp/studio-interior.webp" loading="eager" decoding="async" alt="Velvet Room Studio interior" />
+        </picture>
+        <div class="hero-photo-tag">The Studio</div>
+      </div>
+      <div class="hero-photo">
+        <picture>
+          <source srcset="assets/webp/styling-curls.webp" type="image/webp" />
+          <img src="assets/webp/styling-curls.webp" alt="Stylist at work" />
+        </picture>
+        <div class="hero-photo-tag">Styling</div>
+      </div>
+      <div class="hero-photo">
+        <picture>
+          <source srcset="assets/webp/foil-highlights.webp" type="image/webp" />
+          <img src="assets/webp/foil-highlights.webp" alt="Colour application" />
+        </picture>
+        <div class="hero-photo-tag">Colour</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════
+       ABOUT
+  ══════════════════════ -->
+  <section id="about" aria-labelledby="aboutTitle">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-visual" data-reveal>
+          <div class="about-img-main">
+            <picture>
+              <source srcset="assets/webp/copper-waves.webp" type="image/webp" />
+              <img src="assets/webp/copper-waves.webp" loading="lazy" decoding="async" alt="Copper balayage result" />
+            </picture>
+          </div>
+          <div class="about-img-accent">
+            <picture>
+              <source srcset="assets/webp/bridal-updo.webp" type="image/webp" />
+              <img src="assets/webp/bridal-updo.webp" loading="lazy" decoding="async" alt="Bridal styling" />
+            </picture>
+          </div>
+          <div class="about-badge">
+            <strong>8+</strong>
+            <span>Yrs Est.</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-label">About the Studio</span>
+          <h2 class="section-title" id="aboutTitle">A studio built on<br /><em>quiet excellence.</em></h2>
+          <p class="about-body">Velvet Room Studio has been Sherborne's home for premium hair since 2017. Founded by senior stylist Claire Alderton, the studio was built on a single belief: that every client deserves a result they're genuinely proud of — not just on the day, but every day after.</p>
+          <p class="about-body">We keep our team small, our appointments unhurried, and our standards exceptionally high.</p>
+
+          <div class="about-pillars">
+            <div class="about-pillar">
+              <div class="about-pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h4>Fully tailored, every time</h4>
+                <p>No two clients are the same. Every appointment begins with a proper consultation so we understand exactly what you want and what will work for your hair.</p>
+              </div>
+            </div>
+            <div class="about-pillar">
+              <div class="about-pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h4>Premium products, always</h4>
+                <p>We use only professional-grade colour and care products — kinder to your hair, and built to last so your results stay beautiful for longer.</p>
+              </div>
+            </div>
+            <div class="about-pillar">
+              <div class="about-pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <h4>Your time, respected</h4>
+                <p>We run to time, keep our space calm, and make sure every visit feels like a treat — not a rushed appointment squeezed into a busy schedule.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#booking" class="btn btn-rose">Book Your Appointment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════
+       MID CTA
+  ══════════════════════ -->
+  <div id="mid-cta">
+    <div class="container">
+      <div class="mid-cta-inner">
+        <div class="mid-cta-text">
+          <p><strong>Over 200 five-star reviews.</strong> Trusted by Sherborne since 2017.</p>
+        </div>
+        <div class="mid-cta-actions">
+          <a href="#booking" class="btn btn-ivory">Book Now</a>
+          <a href="tel:+441935847291" class="btn btn-rose-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            01935 847 291
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════
+       SERVICES
+  ══════════════════════ -->
+  <section id="services" aria-labelledby="servicesTitle">
+    <div class="container">
+      <div class="services-header" data-reveal>
+        <div>
+          <span class="section-label">What We Offer</span>
+          <h2 class="section-title" id="servicesTitle">Our Services</h2>
+        </div>
+        <a href="#booking" class="btn btn-ghost">Book a Service</a>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-reveal data-reveal-delay="1">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><path d="M20 5H4a1 1 0 00-1 1v3a1 1 0 001 1h1v8a1 1 0 001 1h12a1 1 0 001-1v-8h1a1 1 0 001-1V6a1 1 0 00-1-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 15v-4M12 15v-4M15 15v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <h3>Cut &amp; Finish</h3>
+          <p>Precision cuts tailored to your face shape, lifestyle, and hair texture. Finished to perfection every time.</p>
+          <span class="service-price">From £55</span>
+        </div>
+
+        <div class="service-card" data-reveal data-reveal-delay="2">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <h3>Colour &amp; Highlights</h3>
+          <p>From full colour to balayage, foils and toning — our colourists create naturally beautiful, lasting results.</p>
+          <span class="service-price">From £85</span>
+        </div>
+
+        <div class="service-card" data-reveal data-reveal-delay="3">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
+          <h3>Balayage</h3>
+          <p>Hand-painted colour for a sun-kissed, dimensional finish that looks effortlessly natural and grows out beautifully.</p>
+          <span class="service-price">From £120</span>
+        </div>
+
+        <div class="service-card" data-reveal data-reveal-delay="1">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Blow Dry &amp; Style</h3>
+          <p>A professional blow dry and style to leave you looking polished for any occasion, from work to a night out.</p>
+          <span class="service-price">From £35</span>
+        </div>
+
+        <div class="service-card" data-reveal data-reveal-delay="2">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Treatments</h3>
+          <p>Restore shine, strength and softness with our professional in-salon treatments, customised to your hair type.</p>
+          <span class="service-price">From £25</span>
+        </div>
+
+        <div class="service-card" data-reveal data-reveal-delay="3">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3M3 16v3a2 2 0 002 2h3m8 0h3a2 2 0 002-2v-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+          <h3>Bridal &amp; Occasion</h3>
+          <p>Bespoke styling for your most important moments. Includes a full consultation and trial run.</p>
+          <span class="service-price">From £150</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════
+       PRICING
+  ══════════════════════ -->
+  <section id="pricing" aria-labelledby="pricingTitle">
+    <div class="container">
+      <div class="pricing-header" data-reveal>
+        <span class="section-label">Investment</span>
+        <h2 class="section-title" id="pricingTitle">Clear, honest pricing</h2>
+        <p>No hidden extras. Prices are confirmed at your consultation.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card" data-reveal data-reveal-delay="1">
+          <span class="pricing-tier">Essentials</span>
+          <h3>Cut &amp; Style</h3>
+          <p>For clients looking for a fresh cut and a professional finish.</p>
+          <div class="pricing-price">£55<span> / visit</span></div>
+          <ul class="pricing-list">
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Consultation</li>
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Precision cut</li>
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Blow dry &amp; finish</li>
+          </ul>
+          <a href="#booking" class="btn btn-charcoal" style="width:100%;justify-content:center;">Book Now</a>
+        </div>
+
+        <div class="pricing-card featured" data-reveal data-reveal-delay="2">
+          <span class="pricing-tier">Most Popular</span>
+          <h3>Colour &amp; Cut</h3>
+          <p>Full colour or highlights with a cut and blow dry. Our most popular package.</p>
+          <div class="pricing-price">£120<span> / visit</span></div>
+          <ul class="pricing-list">
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full colour or highlights</li>
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Toning &amp; gloss</li>
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Precision cut &amp; finish</li>
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Aftercare advice</li>
+          </ul>
+          <a href="#booking" class="btn btn-rose" style="width:100%;justify-content:center;">Book Now</a>
+        </div>
+
+        <div class="pricing-card" data-reveal data-reveal-delay="3">
+          <span class="pricing-tier">Occasion</span>
+          <h3>Balayage &amp; Bridal</h3>
+          <p>Bespoke services for special occasions, with a full consultation and trial.</p>
+          <div class="pricing-price">£150<span> / visit</span></div>
+          <ul class="pricing-list">
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>In-depth consultation</li>
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Balayage or bridal styling</li>
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Trial run included</li>
+            <li><svg class="pricing-check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority booking</li>
+          </ul>
+          <a href="#booking" class="btn btn-charcoal" style="width:100%;justify-content:center;">Book Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════
+       BOOKING / CONTACT
+  ══════════════════════ -->
+  <section id="booking" aria-labelledby="bookingTitle">
+    <div class="container">
+      <div class="booking-inner">
+        <div class="booking-info" data-reveal>
+          <span class="section-label">Book an Appointment</span>
+          <h2 class="section-title" id="bookingTitle">Ready to book?</h2>
+          <p>Fill in the form and we will get back to you within a few hours to confirm your appointment. You can also call us or drop in during opening hours.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="contact-item-text"><a href="tel:+441935847291">01935 847 291</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <div class="contact-item-text"><a href="mailto:hello@velvetroomstudio.co.uk">hello@velvetroomstudio.co.uk</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="8" r="2" stroke="currentColor" stroke-width="1.8"/></svg>
+              </div>
+              <div class="contact-item-text">14 Cheap Street, Sherborne, DT9 3PX</div>
+            </div>
+          </div>
+
+          <div class="contact-hours">
+            <h4>Opening Hours</h4>
+            <div class="hours-row"><span>Tuesday – Friday</span><span>9am – 6pm</span></div>
+            <div class="hours-row"><span>Saturday</span><span>9am – 5pm</span></div>
+            <div class="hours-row"><span>Sunday &amp; Monday</span><span>Closed</span></div>
+          </div>
+        </div>
+
+        <div data-reveal data-reveal-delay="2">
+          <div class="booking-form-wrap" id="formWrap">
+            <form id="bookingForm" novalidate autocomplete="on">
+              <div class="form-row">
+                <div class="form-group"><label for="fName">Name</label><input type="text" id="fName" placeholder="Your name" autocomplete="name" maxlength="100" required /></div>
+                <div class="form-group"><label for="fPhone">Phone</label><input type="tel" id="fPhone" placeholder="01935 000 000" autocomplete="tel" maxlength="20" /></div>
+              </div>
+              <div class="form-group"><label for="fEmail">Email</label><input type="email" id="fEmail" placeholder="your@email.com" autocomplete="email" maxlength="254" required /></div>
+              <div class="form-group">
+                <label for="fService">Service</label>
+                <select id="fService">
+                  <option value="" disabled selected>Select a service…</option>
+                  <option>Cut &amp; Finish</option>
+                  <option>Colour &amp; Highlights</option>
+                  <option>Balayage</option>
+                  <option>Blow Dry &amp; Style</option>
+                  <option>Treatments</option>
+                  <option>Bridal &amp; Occasion</option>
+                  <option>Not sure — need advice</option>
+                </select>
+              </div>
+              <div class="form-group"><label for="fDate">Preferred date</label><input type="text" id="fDate" placeholder="e.g. Saturday morning" autocomplete="off" maxlength="100" /></div>
+              <div class="form-group"><label for="fNotes">Anything else</label><textarea id="fNotes" maxlength="1000" placeholder="Tell us about your hair, what you're hoping to achieve, or any questions…"></textarea></div>
+              <button type="submit" class="form-submit">Request an Appointment</button>
+              <p class="form-privacy">Your details are used only to handle your booking enquiry.</p>
+            </form>
+          </div>
+          <div class="booking-success" id="bookingSuccess">
+            <div class="success-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Request received</h3>
+            <p>We will be in touch within a few hours to confirm your appointment. We look forward to seeing you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">Velvet <em>Room</em></a>
+          <p>Premium hair studio in the heart of Sherborne, Dorset. Open Tuesday to Saturday.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Cut &amp; Finish</a></li>
+            <li><a href="#services">Colour &amp; Highlights</a></li>
+            <li><a href="#services">Balayage</a></li>
+            <li><a href="#services">Bridal &amp; Occasion</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <ul>
+            <li><a href="#">14 Cheap Street, Sherborne</a></li>
+            <li><a href="#">DT9 3PX, Dorset</a></li>
+            <li><a href="tel:+441935847291">01935 847 291</a></li>
+            <li><a href="mailto:hello@velvetroomstudio.co.uk">hello@velvetroomstudio.co.uk</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li><a href="#">Tuesday – Friday: 9am – 6pm</a></li>
+            <li><a href="#">Saturday: 9am – 5pm</a></li>
+            <li><a href="#">Sunday &amp; Monday: Closed</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Velvet Room Studio. All rights reserved.</p>
+        <p class="footer-credit">Website by <a href="../../index.html">Harbour Studios</a></p>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/salon.js"></script>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="region" aria-label="Cookie notice">
+    <p class="cookie-text">We use cookies to ensure the site works correctly and to understand how it's used. No tracking or advertising cookies. <a href="#">Learn more</a>.</p>
+    <div class="cookie-actions">
+      <button class="cookie-accept" id="cookieAccept">Accept</button>
+      <button class="cookie-decline" id="cookieDecline">Decline</button>
+    </div>
+  </div>
+</body>
+</html>

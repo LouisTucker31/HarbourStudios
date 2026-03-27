@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- SECURITY HEADERS (set via server too; metas as fallback) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IronForge Gym: London's most results-driven fitness facility. Premium classes, expert trainers, flexible memberships." />
+  <title>IronForge Gym | Train Hard. Live Stronger.</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/home.min.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+  <!-- HARBOUR STUDIOS DEMO BANNER -->
+  <div class="demo-banner">This is a demo website built by Harbour Studios. <a href="../../pages/contact.html">Want one like this? Get a free quote →</a></div>
+
+  <!-- NAV -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">IRON<span>FORGE</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/classes.html">Classes</a></li>
+      <li><a href="pages/memberships.html">Memberships</a></li>
+      <li><a href="pages/trainers.html">Trainers</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+    <a href="pages/memberships.html" class="btn btn-primary nav-cta">Join Now</a>
+    <button class="nav-hamburger" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/classes.html">Classes</a>
+    <a href="pages/memberships.html">Memberships</a>
+    <a href="pages/trainers.html">Trainers</a>
+    <a href="pages/contact.html">Contact</a>
+    <a href="pages/memberships.html" class="btn btn-primary" style="margin-top:8px; text-align:center; justify-content:center;">Join Now</a>
+  </div>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: linear-gradient(to right, rgba(10,10,10,0.95) 45%, rgba(10,10,10,0.4) 100%), url('assets/images/hero-bg.webp');"></div>
+    <div class="hero-noise"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <span>London's Premier Fitness Facility</span>
+        </div>
+        <h1 class="fade-up">
+          FORGE YOUR
+          <em>BEST SELF</em>
+        </h1>
+        <p class="hero-sub fade-up fade-up-delay-1">
+          Elite training, expert coaches, and a community built to push you beyond your limits. No excuses. Just results.
+        </p>
+        <div class="hero-actions fade-up fade-up-delay-2">
+          <a href="pages/memberships.html" class="btn btn-primary btn-lg">Start Today</a>
+          <a href="pages/classes.html" class="btn btn-outline btn-lg">View Classes</a>
+        </div>
+        <div class="hero-stats fade-up fade-up-delay-3">
+          <div>
+            <span class="stat-num"><span data-counter="2400" data-suffix="+">2400+</span></span>
+            <span class="stat-label">Active Members</span>
+          </div>
+          <div>
+            <span class="stat-num"><span data-counter="40" data-suffix="+">40+</span></span>
+            <span class="stat-label">Weekly Classes</span>
+          </div>
+          <div>
+            <span class="stat-num"><span data-counter="12" data-suffix="">12</span></span>
+            <span class="stat-label">Expert Trainers</span>
+          </div>
+          <div>
+            <span class="stat-num"><span data-counter="8" data-suffix=" Yrs">8 Yrs</span></span>
+            <span class="stat-label">Established</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MARQUEE ======== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-item">HIIT TRAINING <span class="marquee-dot"></span></div>
+      <div class="marquee-item">POWERLIFTING <span class="marquee-dot"></span></div>
+      <div class="marquee-item">BOXING <span class="marquee-dot"></span></div>
+      <div class="marquee-item">YOGA & MOBILITY <span class="marquee-dot"></span></div>
+      <div class="marquee-item">CROSSFIT <span class="marquee-dot"></span></div>
+      <div class="marquee-item">SPIN CYCLING <span class="marquee-dot"></span></div>
+      <div class="marquee-item">PERSONAL TRAINING <span class="marquee-dot"></span></div>
+      <div class="marquee-item">NUTRITION COACHING <span class="marquee-dot"></span></div>
+      <!-- duplicate for seamless loop -->
+      <div class="marquee-item">HIIT TRAINING <span class="marquee-dot"></span></div>
+      <div class="marquee-item">POWERLIFTING <span class="marquee-dot"></span></div>
+      <div class="marquee-item">BOXING <span class="marquee-dot"></span></div>
+      <div class="marquee-item">YOGA & MOBILITY <span class="marquee-dot"></span></div>
+      <div class="marquee-item">CROSSFIT <span class="marquee-dot"></span></div>
+      <div class="marquee-item">SPIN CYCLING <span class="marquee-dot"></span></div>
+      <div class="marquee-item">PERSONAL TRAINING <span class="marquee-dot"></span></div>
+      <div class="marquee-item">NUTRITION COACHING <span class="marquee-dot"></span></div>
+    </div>
+  </div>
+
+  <!-- ======== FEATURES STRIP ======== -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="features-strip" data-reveal>
+        <div class="feature-item">
+          <span class="feature-icon">🏋️</span>
+          <h4>State-of-the-Art Equipment</h4>
+          <p>20,000 sq ft of premium Technogym & Eleiko kit, updated annually.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔥</span>
+          <h4>40+ Classes Weekly</h4>
+          <p>From 5:30am to 10pm, group fitness built around your schedule.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📱</span>
+          <h4>Easy Online Booking</h4>
+          <p>Reserve classes, PT sessions and facilities in seconds.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🥗</span>
+          <h4>Nutrition & Recovery</h4>
+          <p>In-house nutrition bar, ice baths, sauna and recovery zone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CLASSES PREVIEW ======== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="label">What We Offer</div>
+        <h2>SIGNATURE CLASSES</h2>
+        <div class="divider"></div>
+        <p style="max-width:520px;">High-energy group sessions led by our certified coaches. Every class is designed to challenge, energise and transform.</p>
+      </div>
+      <div class="classes-preview" data-reveal data-reveal-delay="100">
+        <div class="class-card">
+          <div class="class-card-bg" style="background-image: url('assets/images/classes/hiit.webp'); background-size: cover; background-position: center;"></div>
+          <div class="class-card-overlay"></div>
+          <div class="class-card-content">
+            <div class="class-card-tag"><span class="tag">High Intensity</span></div>
+            <h3>HIIT BLAST</h3>
+            <p>45 minutes of explosive intervals. Maximum burn, maximum results.</p>
+            <div class="class-card-meta">
+              <span>45 min</span>
+              <span>•</span>
+              <span>All Levels</span>
+              <span>•</span>
+              <span>Daily</span>
+            </div>
+          </div>
+        </div>
+        <div class="class-card">
+          <div class="class-card-bg" style="background-image: url('assets/images/classes/powerlifting.webp'); background-size: cover; background-position: center;"></div>
+          <div class="class-card-overlay"></div>
+          <div class="class-card-content">
+            <div class="class-card-tag"><span class="tag">Strength</span></div>
+            <h3>POWER LIFT</h3>
+            <p>Build raw strength through structured barbell progressions.</p>
+            <div class="class-card-meta">
+              <span>60 min</span>
+              <span>•</span>
+              <span>Intermediate</span>
+              <span>•</span>
+              <span>Mon/Wed/Fri</span>
+            </div>
+          </div>
+        </div>
+        <div class="class-card">
+          <div class="class-card-bg" style="background-image: url('assets/images/classes/yoga.webp'); background-size: cover; background-position: center;"></div>
+          <div class="class-card-overlay"></div>
+          <div class="class-card-content">
+            <div class="class-card-tag"><span class="tag">Recovery</span></div>
+            <h3>FLOW YOGA</h3>
+            <p>Active recovery, deep stretching and mental reset for peak performance.</p>
+            <div class="class-card-meta">
+              <span>50 min</span>
+              <span>•</span>
+              <span>All Levels</span>
+              <span>•</span>
+              <span>Tue/Thu/Sat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="pages/classes.html" class="btn btn-outline">See Full Timetable →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MEMBERSHIP PREVIEW ======== -->
+  <section class="section" style="background: var(--dark); border-top: 1px solid var(--dark-3); border-bottom: 1px solid var(--dark-3);">
+    <div class="container">
+      <div class="section-header section-header-center" data-reveal>
+        <div class="label">Flexible Plans</div>
+        <h2>MEMBERSHIP OPTIONS</h2>
+        <div class="divider divider-center"></div>
+        <p style="max-width:460px; margin:0 auto;">No long contracts. Cancel anytime. Just straightforward pricing that fits your lifestyle.</p>
+      </div>
+      <div class="membership-cards" data-reveal data-reveal-delay="100">
+
+        <div class="membership-card">
+          <div class="membership-name">Starter</div>
+          <p style="font-size:0.85rem;">Perfect for getting started on your fitness journey.</p>
+          <div class="membership-price">
+            <span class="price-currency">£</span>
+            <span class="price-amount">29</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="membership-features">
+            <li>Gym floor access (off-peak)</li>
+            <li>4 group classes/month</li>
+            <li>Locker room access</li>
+            <li>Online booking app</li>
+            <li class="off">Personal training sessions</li>
+            <li class="off">Recovery zone access</li>
+            <li class="off">Nutrition coaching</li>
+          </ul>
+          <a href="pages/memberships.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
+        </div>
+
+        <div class="membership-card featured">
+          <div class="membership-name">Elite</div>
+          <p style="font-size:0.85rem;">Our most popular plan for serious progress.</p>
+          <div class="membership-price">
+            <span class="price-currency">£</span>
+            <span class="price-amount">59</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="membership-features">
+            <li>Unlimited gym floor access</li>
+            <li>Unlimited group classes</li>
+            <li>Locker room & towels</li>
+            <li>Online booking app</li>
+            <li>2 PT sessions/month</li>
+            <li>Recovery zone access</li>
+            <li class="off">Nutrition coaching</li>
+          </ul>
+          <a href="pages/memberships.html" class="btn btn-primary" style="width:100%; justify-content:center;">Join Elite</a>
+        </div>
+
+        <div class="membership-card">
+          <div class="membership-name">Pro</div>
+          <p style="font-size:0.85rem;">The complete package for maximum transformation.</p>
+          <div class="membership-price">
+            <span class="price-currency">£</span>
+            <span class="price-amount">99</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="membership-features">
+            <li>Unlimited gym floor access</li>
+            <li>Unlimited group classes</li>
+            <li>Premium locker & towels</li>
+            <li>Online booking app</li>
+            <li>4 PT sessions/month</li>
+            <li>Recovery zone access</li>
+            <li>Monthly nutrition check-in</li>
+          </ul>
+          <a href="pages/memberships.html" class="btn btn-outline" style="width:100%; justify-content:center;">Go Pro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TRAINERS PREVIEW ======== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:20px;" data-reveal>
+        <div>
+          <div class="label">The Team</div>
+          <h2>MEET YOUR COACHES</h2>
+          <div class="divider"></div>
+        </div>
+        <a href="pages/trainers.html" class="btn btn-outline" style="margin-bottom:32px;">See All Trainers →</a>
+      </div>
+      <div class="trainers-grid" data-reveal data-reveal-delay="100">
+        <div class="trainer-card">
+          <div class="trainer-photo" style="background-image: url('assets/images/trainers/marcus.webp'); background-size: cover; background-position: center top;">
+            <div class="trainer-photo-overlay"></div>
+            <button class="btn btn-primary trainer-view-btn" onclick="window.location='pages/trainers.html'">View Profile</button>
+          </div>
+          <div class="trainer-info">
+            <h4>Marcus Reid</h4>
+            <span class="trainer-specialty">Head Coach · Strength & Conditioning</span>
+            <p>Former GB athlete with 12 years coaching elite performers.</p>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-photo" style="background-image: url('assets/images/trainers/priya.webp'); background-size: cover; background-position: center top;">
+            <div class="trainer-photo-overlay"></div>
+            <button class="btn btn-primary trainer-view-btn" onclick="window.location='pages/trainers.html'">View Profile</button>
+          </div>
+          <div class="trainer-info">
+            <h4>Priya Sharma</h4>
+            <span class="trainer-specialty">HIIT & Functional Fitness</span>
+            <p>NASM certified, specialising in body transformation programming.</p>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-photo" style="background-image: url('assets/images/trainers/demi.webp'); background-size: cover; background-position: center top;">
+            <div class="trainer-photo-overlay"></div>
+            <button class="btn btn-primary trainer-view-btn" onclick="window.location='pages/trainers.html'">View Profile</button>
+          </div>
+          <div class="trainer-info">
+            <h4>Demi Clarke</h4>
+            <span class="trainer-specialty">Yoga & Mobility</span>
+            <p>300hr certified yoga instructor, athletic recovery specialist.</p>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-photo" style="background-image: url('assets/images/trainers/jake.webp'); background-size: cover; background-position: center top;">
+            <div class="trainer-photo-overlay"></div>
+            <button class="btn btn-primary trainer-view-btn" onclick="window.location='pages/trainers.html'">View Profile</button>
+          </div>
+          <div class="trainer-info">
+            <h4>Jake Okonkwo</h4>
+            <span class="trainer-specialty">Boxing & Combat Fitness</span>
+            <p>Professional boxing background, now training London's elite.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======== TESTIMONIALS ======== -->
+  <section class="section gym-testimonials">
+    <div class="container">
+      <div class="gym-test-header">
+        <div class="gym-test-header-left">
+          <span class="label">Member Stories</span>
+          <h2>Real people.<br /><em>Real results.</em></h2>
+        </div>
+        <div class="gym-test-rating">
+          <div class="gym-test-rating-score">4.9</div>
+          <div class="gym-test-rating-detail">
+            <div class="gym-test-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <span>2,400+ members</span>
+          </div>
+        </div>
+      </div>
+      <div class="gym-test-grid">
+        <div class="gym-test-card gym-test-card--featured">
+          <div class="gym-test-quote-mark">&ldquo;</div>
+          <p class="gym-test-quote">IronForge changed everything for me. In six months I lost 18kg, hit my first powerlifting comp, and actually look forward to training. This place is different.</p>
+          <div class="gym-test-author">
+            <div class="gym-test-avatar">JR</div>
+            <div class="gym-test-author-info"><strong>Jamie R.</strong><span>Member since 2022</span></div>
+            <div class="gym-test-tag gym-test-tag--row">Powerlifting</div>
+          </div>
+        </div>
+        <div class="gym-test-card">
+          <div class="gym-test-quote-mark">&ldquo;</div>
+          <p class="gym-test-quote">The coaches here actually know your name and your goals. It doesn't feel like a factory gym. The HIIT classes are brutal in the best possible way.</p>
+          <div class="gym-test-author">
+            <div class="gym-test-avatar">SK</div>
+            <div class="gym-test-author-info"><strong>Simone K.</strong><span>Member since 2023</span></div>
+            <div class="gym-test-tag gym-test-tag--row">HIIT</div>
+          </div>
+        </div>
+        <div class="gym-test-card">
+          <div class="gym-test-quote-mark">&ldquo;</div>
+          <p class="gym-test-quote">Joined after years of yo-yo gym memberships. The community here is what keeps me coming back. Best decision I've made for my health.</p>
+          <div class="gym-test-author">
+            <div class="gym-test-avatar">MT</div>
+            <div class="gym-test-author-info"><strong>Marcus T.</strong><span>Member since 2021</span></div>
+            <div class="gym-test-tag gym-test-tag--row">CrossFit</div>
+          </div>
+        </div>
+        <div class="gym-test-card">
+          <div class="gym-test-quote-mark">&ldquo;</div>
+          <p class="gym-test-quote">I was intimidated walking in on day one. Within a week the trainers had built a programme around me, not the other way around. Now I can't imagine training anywhere else.</p>
+          <div class="gym-test-author">
+            <div class="gym-test-avatar">PW</div>
+            <div class="gym-test-author-info"><strong>Priya W.</strong><span>Member since 2023</span></div>
+            <div class="gym-test-tag gym-test-tag--row">Boxing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CTA BANNER ======== -->
+  <section class="section-sm">
+    <div class="container" data-reveal>
+      <div class="cta-banner">
+        <div class="cta-banner-text">
+          <h2>READY TO START YOUR TRANSFORMATION?</h2>
+          <p>Join over 2,400 members already training at IronForge. Your first class is on us, no commitment, no pressure.</p>
+        </div>
+        <div class="cta-banner-actions">
+          <a href="pages/memberships.html" class="btn btn-primary btn-lg">Join Today</a>
+          <a href="pages/contact.html" class="btn btn-outline btn-lg">Free Trial Class</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <!-- NEWSLETTER FLOAT -->
+  <section class="newsletter-float">
+    <div class="container">
+      <div class="newsletter-float-inner">
+        <div class="newsletter-float-text">
+          <h4>GET FIT TIPS &amp; OFFERS</h4>
+          <p>Join 3,000+ members getting weekly training tips, class updates &amp; exclusive deals.</p>
+        </div>
+        <form class="newsletter-form" novalidate>
+          <input type="email" placeholder="Your email address" required autocomplete="email" />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-logo">IRON<span>FORGE</span></span>
+          <p class="footer-desc">London's most results-driven gym. Built for athletes, welcoming to all. Push your limits every single day.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+            <a href="#" class="social-icon" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/classes.html">Classes</a></li>
+            <li><a href="pages/memberships.html">Memberships</a></li>
+            <li><a href="pages/trainers.html">Our Trainers</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Plans</h5>
+          <ul>
+            <li><a href="pages/memberships.html">Starter: &pound;29/mo</a></li>
+            <li><a href="pages/memberships.html">Elite: &pound;59/mo</a></li>
+            <li><a href="pages/memberships.html">Pro: &pound;99/mo</a></li>
+            <li><a href="pages/memberships.html">Add-Ons</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon">📍</span>
+              <a href="#">12 Forge Lane, Shoreditch, London E1 6RF</a>
+            </li>
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon">📞</span>
+              <a href="tel:+442071234567">020 7123 4567</a>
+            </li>
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon">✉️</span>
+              <a href="mailto:hello@ironforgefit.co.uk">hello@ironforgefit.co.uk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 IronForge Gym Ltd. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  
+        <p style="font-size:12px;color:rgba(255,255,255,0.3);margin-top:6px;">Website by <a href="../../index.html" style="color:#ff5c00;opacity:0.7;">Harbour Studios</a></p>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div id="bookingModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:2000; align-items:center; justify-content:center; padding:20px;">
+    <div style="background:var(--dark-2); border:1px solid var(--dark-3); border-radius:var(--radius-md); width:100%; max-width:500px; padding:48px; position:relative;">
+      <button id="bookingClose" style="position:absolute; top:20px; right:20px; background:none; border:none; color:var(--light-grey); font-size:1.5rem; cursor:pointer; line-height:1;">×</button>
+      <div class="label">Book a Class</div>
+      <h3 style="color:var(--white); margin-bottom:8px;" id="bookingClassName">HIIT Blast</h3>
+      <p style="margin-bottom:28px; font-size:0.9rem;">Fill in your details and we'll confirm your spot within 24 hours.</p>
+      <form class="membership-join-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Jane Smith" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="jane@email.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" placeholder="07700 900000" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preferred Date</label>
+            <input type="date" />
+          </div>
+          <div class="form-group">
+            <label>Preferred Time</label>
+            <select>
+              <option>06:00 AM</option>
+              <option>09:30 AM</option>
+              <option>12:00 PM</option>
+              <option>06:00 PM</option>
+              <option>07:30 PM</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:8px;">Confirm Booking</button>
+        <p style="text-align:center; font-size:0.78rem; margin-top:12px; color:var(--mid-grey);">No payment required, we'll confirm availability first.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="region" aria-label="Cookie notice">
+    <p class="cookie-text">We use cookies to ensure the site works correctly and to understand how it's used. No tracking or advertising cookies. <a href="#">Learn more</a>.</p>
+    <div class="cookie-actions">
+      <button class="cookie-accept" id="cookieAccept">Accept</button>
+      <button class="cookie-decline" id="cookieDecline">Decline</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

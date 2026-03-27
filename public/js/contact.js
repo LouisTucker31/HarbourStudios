@@ -1,0 +1,123 @@
+/* =============================================
+   CONTACT PAGE JAVASCRIPT
+   ============================================= */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ---- NAV ---- */
+  const navbar = document.getElementById('navbar');
+
+  if (navbar) navbar.style.background = 'rgba(13,27,42,0.97)';
+
+  window.addEventListener('scroll', () => {
+    if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  /* ---- HAMBURGER ---- */
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('navLinks');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+      });
+    });
+  }
+
+  /* ---- CONTACT FORM ---- */
+  const form        = document.getElementById('contactForm');
+  const formWrap    = document.getElementById('formWrap');
+  const formSuccess = document.getElementById('formSuccess');
+  const formError   = document.getElementById('formError');
+
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const submitBtn = form.querySelector('.form-submit');
+    submitBtn.textContent = 'Sending…';
+    submitBtn.disabled = true;
+
+    if (formError) formError.style.display = 'none';
+
+    const payload = {
+      firstName: form.firstName.value.trim(),
+      lastName:  form.lastName.value.trim(),
+      email:     form.email.value.trim(),
+      business:  form.business.value.trim(),
+      service:   form.service.value,
+      budget:    form.budget.value,
+      message:   form.message.value.trim(),
+      _hp:       form._hp ? form._hp.value : '',
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        formWrap.style.display = 'none';
+        formSuccess.classList.add('visible');
+      } else {
+        throw new Error(result.error || 'Something went wrong.');
+      }
+    } catch (err) {
+      if (formError) {
+        formError.textContent = err.message || 'Something went wrong. Please try again.';
+        formError.style.display = 'block';
+      }
+      submitBtn.textContent = 'Send Message →';
+      submitBtn.disabled = false;
+    }
+  });
+
+  /* ---- SCROLL REVEAL ---- */
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  /* ── FLOATING CTA visibility ── */
+  const floatCta = document.getElementById('floatCta');
+  if (floatCta) {
+    floatCta.style.opacity = '1';
+    floatCta.style.transition = 'opacity 0.4s ease';
+  }
+
+  /* ── COOKIE BANNER ── */
+  const banner  = document.getElementById('cookie-banner');
+  const accept  = document.getElementById('cookieAccept');
+  const decline = document.getElementById('cookieDecline');
+  if (banner) {
+    const consent = localStorage.getItem('hs_cookie_consent');
+    if (!consent) setTimeout(() => banner.classList.add('visible'), 1200);
+    const dismiss = (v) => {
+      banner.classList.remove('visible');
+      try { localStorage.setItem('hs_cookie_consent', v); } catch {}
+      const fc = document.getElementById('floatCta');
+      if (fc) fc.classList.add('cookie-dismissed');
+    };
+    if (accept)  accept.addEventListener('click',  () => dismiss('accepted'));
+    if (decline) decline.addEventListener('click', () => dismiss('declined'));
+  }
+
+});
+
