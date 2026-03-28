@@ -211,7 +211,7 @@ app.post('/api/contact', rateLimit, async (req, res) => {
   <div style="background:#0d1b2a;padding:28px 36px;"><p style="font-family:Georgia,serif;font-size:20px;font-weight:700;color:#fff;margin:0;">Harbour Studios</p><p style="color:rgba(245,240,232,0.55);font-size:12px;margin:5px 0 0;">Enquiry Confirmation</p></div>
   <div style="background:#fff;padding:32px 36px;">
     <h2 style="font-family:Georgia,serif;color:#0d1b2a;font-size:18px;margin:0 0 14px;">Thanks, ${firstName}. We've got your message.</h2>
-    <p style="color:#3a3a3a;font-size:15px;line-height:1.75;margin:0 0 22px;">We'll be in touch within <strong>24 hours</strong> with a clear, no-obligation quote.</p>
+    <p style="color:#3a3a3a;font-size:15px;line-height:1.75;margin:0 0 22px;">We'll be in touch within <strong>24 hours</strong> to get the conversation started.</p>
     <div style="background:#f5f0e8;border-radius:8px;padding:18px 22px;margin-bottom:24px;">
       <p style="font-size:12px;color:#7a8a99;text-transform:uppercase;letter-spacing:0.1em;margin:0 0 10px;">Your enquiry summary</p>
       <table style="width:100%;border-collapse:collapse;font-size:14px;">
@@ -224,9 +224,9 @@ app.post('/api/contact', rateLimit, async (req, res) => {
   <div style="background:#f5f0e8;padding:24px 36px;">
     <p style="font-size:12px;color:#7a8a99;text-transform:uppercase;letter-spacing:0.1em;margin:0 0 14px;">What happens next</p>
     <table style="font-size:14px;color:#3a3a3a;width:100%;">
-      <tr><td style="padding:5px 0;width:24px;color:#c9a84c;font-weight:700;">1.</td><td style="padding:5px 0;">We review your project details</td></tr>
-      <tr><td style="padding:5px 0;color:#c9a84c;font-weight:700;">2.</td><td style="padding:5px 0;">We put together a clear, fixed-price proposal</td></tr>
-      <tr><td style="padding:5px 0;color:#c9a84c;font-weight:700;">3.</td><td style="padding:5px 0;">We get back to you within 24 hours, no obligation</td></tr>
+      <tr><td style="padding:5px 0;width:24px;color:#c9a84c;font-weight:700;">1.</td><td style="padding:5px 0;">We review your details</td></tr>
+      <tr><td style="padding:5px 0;color:#c9a84c;font-weight:700;">2.</td><td style="padding:5px 0;">We get in touch to find out more about what you need</td></tr>
+      <tr><td style="padding:5px 0;color:#c9a84c;font-weight:700;">3.</td><td style="padding:5px 0;">We put together a clear, fixed-price proposal, no obligation</td></tr>
     </table>
   </div>
   <div style="background:#07111c;padding:16px 36px;"><p style="color:rgba(255,255,255,0.25);font-size:12px;margin:0 0 3px;">Harbour Studios</p><p style="color:rgba(255,255,255,0.15);font-size:11px;margin:0;">You received this because you submitted an enquiry on our website.</p></div>
